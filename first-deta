@@ -1,2 +1,6 @@
 from flask import Flask 
-a = 2
+app = Flask(__name__) 
+
+@app.route('/') 
+def hi() : 
+    return 'hi , welcome to this website' 
